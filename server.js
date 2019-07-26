@@ -1,12 +1,12 @@
 var express = require("express");
 var path = require("path");
-var bodyParser = require("body-parser");
+// var bodyParser = require("body-parser");
 var htmlF = require("../friendsFinder/app/routing/htmlRoutes.js")
 
 var app = express();
 
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 var port = 3000;
 var route = new htmlF;
@@ -33,6 +33,11 @@ app.get("/", (req, res) => {
 
 app.get("/survey", (req, res) => {
     route.ques(res);
+})
+
+app.post("/api/people", (req, res) => {
+    var insert = req.body;
+    console.log(insert);
 })
 
 app.listen(port, () => {
