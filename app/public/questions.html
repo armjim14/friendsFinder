@@ -5,8 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 </head>
 <body>
-    1: <input type="text">
+    <div id="contain">
+        <div id="headerLeft">
+                <h2>Questions</h2>
+        </div>
+        <div id="headerRight">
+            <button class="nclick" id="back">Back</button>
+        </div>
+        <hr>
+        <div id="uniqeInfo">
+            <h3>About You</h3>
+            <p>Name: </p>
+            <input type="text" id="name">
+            <p>URL Image of you: </p>
+            <input type="text" id="url">
+        </div>
+        <hr>
+        <div id="questions">
+            <div class="qu">
+                <h4> Question 1 </h4>
+                <p> I prefer to live in a small town </p>
+                <select id="a1">
+                    <option value="0">Select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="qu">
+                <h4> Question 2 </h4>
+                <p> I prefer to live in a small town </p>
+                <select id="a2">
+                    <option value="0">Select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="qu">
+                <h4> Question 3 </h4>
+                <p> I prefer to live in a small town </p>
+                <select id="a3">
+                    <option value="0">Select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="qu">
+                <h4> Question 4 </h4>
+                <p> I prefer to live in a small town </p>
+                <select id="a4">
+                    <option value="0">Select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="qu">
+                <h4> Question 5 </h4>
+                <p> I prefer to live in a small town </p>
+                <select id="a5">
+                    <option value="0">Select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="qu">
+                <h4> Question 6 </h4>
+                <p> I prefer to live in a small town </p>
+                <select id="a6">
+                    <option value="0">Select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="qu">
+                <h4> Question 7 </h4>
+                <p> I prefer to live in a small town </p>
+                <select id="a7">
+                    <option value="0">Select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="qu">
+                <h4> Question 8 </h4>
+                <p> I prefer to live in a small town </p>
+                <select id="a8">
+                    <option value="0">Select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="qu">
+                <h4> Question 9 </h4>
+                <p> I prefer to live in a small town </p>
+                <select id="a9">
+                    <option value="0">Select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="qu">
+                <h4> Question 10 </h4>
+                <p> I prefer to live in a small town </p>
+                <select id="ax">
+                    <option value="0">Select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div id="submit">
+            <button id="done">Submit</button>
+        </div>
+    </div>
+<script src="logic.js"></script>
 </body>
 </html>

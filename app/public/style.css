@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(255, 243, 240);
+}
+
+/* for index page */
+#box {
+    width: 900px;
+    margin: auto;
+    margin-top: 150px;
+    border: black dotted 2px;
+    background-color: azure;
+}
+
+#bhead {
+    text-align: center;
+    font-size: 50px;
+    padding: 10px 0 5px 0;
+}
+
+#btext {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+#bclick {
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 22px;
+    border-radius: 20%;
+    background-color: rgb(255, 243, 240);
+    border: black solid 1px;
+}
+
+#bclick:hover, .nclick:hover, #done:hover {
+    font-weight: bold;
+}
+/* no longer for index page */
+
+#contain {
+    margin: auto;
+    margin-top: 20px;
+    width: 980px;
+    background-color: azure;
+}
+
+#headerLeft {
+    float: left;
+    width: 50%;
+}
+
+h2 {
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+#headerRight {
+    float: left;
+    width: 50%;;
+}
+
+.nclick {
+    float: right;
+    margin: 20px;
+    font-size: 22px;
+    border-radius: 20%;
+    background-color: rgb(255, 243, 240);
+    border: black solid 1px;
+}
+
+#uniqeInfo {
+    clear: both;
+    margin-left: 20px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+input {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#questions {
+    margin-left: 20px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+select {
+    margin-top: 10px;
+}
+
+.qu {
+    margin-bottom: 30px;
+}
+
+#ax {
+    margin-bottom: 40px;
+}
+
+#submit {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#done {
+    font-size: 22px;
+    border-radius: 20%;
+    background-color: rgb(255, 243, 240);
+    border: black solid 1px;
+    margin-bottom: 20px;
+    width: 85%;
+}
