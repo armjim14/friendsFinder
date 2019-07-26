@@ -2,14 +2,15 @@
 var express = require("express");
 var path = require("path");
 // var bodyParser = require("body-parser");
-var html = require("../friendsFinder/app/routing/htmlRoutes.js");
-var apix = require("../friendsFinder/app/routing/api.js");
+var html = require( path.resolve(__dirname, "./app/routing/htmlRoutes.js") );
+var apix = require( path.resolve(__dirname, "./app/routing/api.js") );
 
 var app = express();
 
 
 // port we are going to be using 
 var PORT = process.env.PORT || 3000;
+
 // this uses htmlRoute.js and api.js to return to us a render HTML page && api request
 var route = new html;
 var api = new apix;
