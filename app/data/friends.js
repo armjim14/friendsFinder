@@ -22,7 +22,7 @@ var friendsList = [
     },
     {
         name: "john",
-        photo: "http://cdn.shopify.com/s/files/1/0891/8314/products/Poker_Face_Die_C_4fedc859b8b66_grande.jpeg?v=1459067191",
+        photo: "http://momentosdecameron.co/wp-content/uploads/2019/06/how-to-draw-people-faces-drawing-peoples-faces-home-improvement-loan-options.jpg",
         score: [
             5, 5, 5,
             5, 5, 5, 

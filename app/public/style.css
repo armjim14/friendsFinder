@@ -6,9 +6,12 @@ body {
 #box, #box2 {
     width: 900px;
     margin: auto;
-    margin-top: 150px;
     border: black dotted 2px;
     background-color: azure;
+}
+
+#box {
+    margin-top: 150px;
 }
 
 #bhead, #ahead {
@@ -66,9 +69,16 @@ p {
 }
 
 input {
-    width: 50%;
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+#name {
+    width: 300px;
+}
+
+#url {
+    width: 90%;
 }
 
 #questions {
@@ -120,6 +130,7 @@ select {
 
 #box2 {
     display: none;
+    margin-top: 30px;
 }
 
 #winner {
@@ -131,6 +142,15 @@ select {
 
 #pic {
     height: 300px;
+    width: 300px;
     margin: auto;
     display: flex;
+}
+
+@media screen and (max-width: 905px){
+    #box, #box2 { width: 99%; }
+}
+
+@media screen and (max-width: 1000px){
+    #contain { width: 100%; }
 }
