@@ -45,7 +45,7 @@ $("#done").on("click", () => {
         }
 
         var temp = [];
-        var nums = [];
+        var nums = [{name: "remove", url: "remove", amount: 500}];
         var list = [parseInt(one), parseInt(two), parseInt(three), parseInt(four), parseInt(five), parseInt(six), parseInt(seven), parseInt(eight), parseInt(nine), parseInt(ten)]
 
         $.get("/api/people", (data) => {
@@ -65,9 +65,12 @@ $("#done").on("click", () => {
                 for ( let j = 0; j < temp.length; j++ ){
                     count += temp[j];
                 }
-                
-                var fin = { name: data[e].name, url: data[e].photo, amount: count }
-                nums.push(fin);
+
+                if ( count < nums[0].amount ){
+                    nums.splice(0, 1);
+                    var fin = { name: data[e].name, url: data[e].photo, amount: count }
+                    nums.push(fin);
+                }
                 temp = [];
             }
             console.log(nums)

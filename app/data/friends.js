@@ -14,9 +14,18 @@ var friendsList = [
         name: "kyle",
         photo: "URl",
         score: [
-            5, 1, 3,
-            4, 2, 5, 
-            1, 3, 4, 1
+            1, 1, 1,
+            1, 1, 1, 
+            1, 1, 1, 1
+        ]
+    },
+    {
+        name: "john",
+        photo: "URl2",
+        score: [
+            5, 5, 5,
+            5, 5, 5, 
+            5, 5, 5, 5
         ]
     }
 ]
