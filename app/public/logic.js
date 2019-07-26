@@ -100,6 +100,7 @@ function afterGet(info){
 }
 
 function forResult(info){
+    console.log(info);
     $("#winner").text(info[0].name);
     $("#pic").attr("src", info[0].url)
 }

@@ -12,8 +12,8 @@ module.exports = update;
 
 var friendsList = [
     {
-        name: "kyle",
-        photo: "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX38503500.jpg",
+        name: "Anna",
+        photo: "https://i.pinimg.com/736x/63/f9/11/63f91182663fbbef31761bfca9aff2e8.jpg",
         score: [
             1, 1, 1,
             1, 1, 1, 
