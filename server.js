@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // port we are going to be using 
-var port = process.env.PORT | 3000;
+var PORT = process.env.PORT | 3000;
 // this uses htmlRoute.js and api.js to return to us a render HTML page && api request
 var route = new html;
 var api = new apix;
@@ -56,6 +56,6 @@ app.get("/api/people", (req, res) => {
 })
 
 // event listener to allow the server to start running
-app.listen(port, () => {
-    console.log("listening on localhost:" + port);
+app.listen(PORT, () => {
+    console.log("listening on localhost:" + PORT);
 })
