@@ -57,6 +57,11 @@ app.get("/api/people", (req, res) => {
     return res.send(api.getStuff());
 })
 
+app.get("/api/people/:person", (req, res) => {
+    var person = req.params.person;
+    return res.send(api.getPerson(person.toLowerCase()));
+})
+
 // event listener to allow the server to start running
 app.listen(PORT, function() {
     console.log("listening on localhost:" + PORT);

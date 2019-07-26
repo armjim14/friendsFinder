@@ -46,7 +46,7 @@ $("#done").on("click", () => {
         $("#box2").css("display", "block")
         
         var send = {
-            name: namex,
+            name: namex.toLowerCase(),
             photo: urlx,
             score: [
                 parseInt(one), parseInt(two), parseInt(three),

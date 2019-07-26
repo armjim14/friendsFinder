@@ -9,6 +9,10 @@ function apiStuff(){
         var first = new friends();
          return first.retrieve();
     }
+    this.getPerson = (person) => {
+        var first = new friends();
+        return first.Per(person);
+    }
 }
 
 module.exports = apiStuff;

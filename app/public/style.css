@@ -40,6 +40,14 @@ body {
 #bclick:hover, .nclick:hover, #done:hover {
     font-weight: bold;
 }
+
+#api {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
 /* no longer for index page */
 
 #contain {
