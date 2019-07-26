@@ -44,7 +44,6 @@ app.get("/survey", (req, res) => {
     route.ques(res);
 })
 
-
 // being able to recieve data from questions.html
 app.post("/api/people", (req, res) => {
     var insert = req.body;

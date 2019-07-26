@@ -1,4 +1,6 @@
 $(".next").on("click", () => {
+    $("#contain").css("display", "block");
+    $("#box2").css("display", "none");
     window.location.href = "/survey";
 })
 
@@ -6,7 +8,12 @@ $("#back").on("click", () => {
     window.location.href = "/";
 })
 
+$("#home").on("click", () => {
+    window.location.href = "/";
+})
+
 $("#done").on("click", () => {
+
     var namex = $("#name").val().trim();
     var urlx = $("#url").val();
 
@@ -34,6 +41,10 @@ $("#done").on("click", () => {
             }
         }, 1000)
     } else {
+
+        $("#contain").css("display", "none")
+        $("#box2").css("display", "block")
+        
         var send = {
             name: namex,
             photo: urlx,
@@ -43,11 +54,11 @@ $("#done").on("click", () => {
                 parseInt(seven), parseInt(eight), parseInt(nine), parseInt(ten)
             ]
         }
-
+        
         var temp = [];
-        var nums = [{name: "remove", url: "remove", amount: 500}];
+        var nums = [{name: "You Have to take the survey first", url: "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX38503500.jpg", amount: 500}];
         var list = [parseInt(one), parseInt(two), parseInt(three), parseInt(four), parseInt(five), parseInt(six), parseInt(seven), parseInt(eight), parseInt(nine), parseInt(ten)]
-
+        
         $.get("/api/people", (data) => {
             for( let e in data ){
                 var now = data[e].score;
@@ -61,11 +72,11 @@ $("#done").on("click", () => {
                         temp.push(up);
                     }
                 }
-
+                
                 for ( let j = 0; j < temp.length; j++ ){
                     count += temp[j];
                 }
-
+                
                 if ( count < nums[0].amount ){
                     nums.splice(0, 1);
                     var fin = { name: data[e].name, url: data[e].photo, amount: count }
@@ -73,12 +84,12 @@ $("#done").on("click", () => {
                 }
                 temp = [];
             }
-            console.log(nums)
+
             afterGet(send);
+            forResult(nums);
         })
-
     }
-
+    
 })
 
 function afterGet(info){
@@ -86,4 +97,9 @@ function afterGet(info){
     .then((data) => {
         console.log("questions.html", data)
     })
+}
+
+function forResult(info){
+    $("#winner").text(info[0].name);
+    $("#pic").attr("src", info[0].url)
 }

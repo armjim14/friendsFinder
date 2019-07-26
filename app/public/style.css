@@ -3,7 +3,7 @@ body {
 }
 
 /* for index page */
-#box {
+#box, #box2 {
     width: 900px;
     margin: auto;
     margin-top: 150px;
@@ -11,7 +11,7 @@ body {
     background-color: azure;
 }
 
-#bhead {
+#bhead, #ahead {
     text-align: center;
     font-size: 50px;
     padding: 10px 0 5px 0;
@@ -40,14 +40,10 @@ body {
 /* no longer for index page */
 
 #contain {
+    display: block;
     margin: auto;
     width: 980px;
     background-color: azure;
-}
-
-#headerLeft {
-    float: left;
-    width: 50%;
 }
 
 h2 {
@@ -55,22 +51,7 @@ h2 {
     margin-left: 20px;
 }
 
-#headerRight {
-    float: left;
-    width: 50%;;
-}
-
-.nclick {
-    float: right;
-    margin: 20px;
-    font-size: 22px;
-    border-radius: 20%;
-    background-color: rgb(255, 243, 240);
-    border: black solid 1px;
-}
-
 #uniqeInfo {
-    clear: both;
     margin-left: 20px;
 }
 
@@ -111,7 +92,7 @@ select {
     margin-bottom: 40px;
 }
 
-#submit {
+#submit, #fin {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -124,4 +105,32 @@ select {
     border: black solid 1px;
     margin-bottom: 20px;
     width: 85%;
+}
+
+/* for result page */
+
+#home {
+    font-size: 22px;
+    border-radius: 20%;
+    background-color: rgb(255, 243, 240);
+    border: black solid 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#box2 {
+    display: none;
+}
+
+#winner {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#pic {
+    height: 300px;
+    margin: auto;
+    display: flex;
 }
