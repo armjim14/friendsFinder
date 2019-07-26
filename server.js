@@ -7,15 +7,16 @@ var apix = require("../friendsFinder/app/routing/api.js");
 
 var app = express();
 
-// allowing to communicate back and fourth with data
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 
 // port we are going to be using 
 var PORT = process.env.PORT || 3000;
 // this uses htmlRoute.js and api.js to return to us a render HTML page && api request
 var route = new html;
 var api = new apix;
+
+// allowing to communicate back and fourth with data
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // links and sources that the HTML pages are using
 app.get("/reset.css", (req, res) => {
