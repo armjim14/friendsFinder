@@ -1,7 +1,7 @@
 # friend Finder
 
 ### In this application you are able to see who you match with to find your next friend.
-### This application is also hosted on Heroku
+### This application is also hosted on Heroku and is mobile friendly
 
 # the home page looks like this
 
