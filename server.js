@@ -57,6 +57,6 @@ app.get("/api/people", (req, res) => {
 })
 
 // event listener to allow the server to start running
-app.listen(PORT, () => {
+app.listen(PORT, function() {
     console.log("listening on localhost:" + PORT);
 })
