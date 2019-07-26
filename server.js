@@ -1,7 +1,7 @@
 // npm packages that were used
 var express = require("express");
 var path = require("path");
-var bodyParser = require("body-parser");
+// var bodyParser = require("body-parser");
 var html = require("../friendsFinder/app/routing/htmlRoutes.js");
 var apix = require("../friendsFinder/app/routing/api.js");
 
@@ -15,8 +15,8 @@ var route = new html;
 var api = new apix;
 
 // allowing to communicate back and fourth with data
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // links and sources that the HTML pages are using
 app.get("/reset.css", (req, res) => {
