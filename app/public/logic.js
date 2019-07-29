@@ -28,6 +28,9 @@ $("#done").on("click", () => {
     var nine = $("#a9").val();
     var ten = $("#ax").val();
 
+    var reg = /(jpg|png|jpeg|gif|tif)/gi;
+    var run = reg.test(urlx);
+
     if ( !namex || !urlx || one == "0" || two == "0" || three == "0" || four == "0" || five == "0" 
     || six == "0" || seven == "0" || eight == "0" || nine == "0" || ten == "0"){
         var count = 0;
@@ -40,7 +43,7 @@ $("#done").on("click", () => {
                 $("#done").text("Submit");
             }
         }, 1000)
-    } else if (urlx.includes("jpg") || urlx.includes("jpeg") || urlx.includes("png") || urlx.includes("gif") || urlx.includes("tif") ) {
+    } else if (run) {
 
         $("#contain").css("display", "none")
         $("#box2").css("display", "block")
