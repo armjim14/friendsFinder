@@ -2,6 +2,7 @@
 
 ### In this application you are able to see who you match with to find your next friend.
 ### This application is also hosted on Heroku and is mobile friendly
+### link is at https://warm-crag-26969.herokuapp.com/
 
 # the home page looks like this
 
