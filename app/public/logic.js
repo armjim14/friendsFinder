@@ -15,7 +15,7 @@ $("#home").on("click", () => {
 $("#done").on("click", () => {
 
     var namex = $("#name").val().trim();
-    var urlx = $("#url").val();
+    var urlx = $("#url").val().trim();
 
     var one = $("#a1").val();
     var two = $("#a2").val();
@@ -40,7 +40,7 @@ $("#done").on("click", () => {
                 $("#done").text("Submit");
             }
         }, 1000)
-    } else {
+    } else if (urlx.includes("jpg") || urlx.includes("jpeg") || urlx.includes("png") || urlx.includes("gif") || urlx.includes("tif") ) {
 
         $("#contain").css("display", "none")
         $("#box2").css("display", "block")
@@ -88,6 +88,17 @@ $("#done").on("click", () => {
             afterGet(send);
             forResult(nums);
         })
+    } else {
+        var count = 0;
+        clearInterval(int);
+        var int = setInterval(() => {
+            $("#done").text("Please enter a valid Image URL");
+            count++
+            if (count == 3){
+                clearInterval(int);
+                $("#done").text("Submit");
+            }
+        }, 1000)
     }
     
 })
@@ -100,7 +111,18 @@ function afterGet(info){
 }
 
 function forResult(info){
-    console.log(info);
-    $("#winner").text(info[0].name);
+    var temp = info[0].name;
+    var second = temp.split("");
+    var ar = [];
+    for (let i = 0; i < second.length; i++){
+        if (i == 0){
+            ar.push(second[i].toUpperCase())
+        } else {
+            ar.push(second[i])
+        }
+    }
+    var name = ar.join("");
+    console.log(name);
+    $("#winner").text(name);
     $("#pic").attr("src", info[0].url)
 }

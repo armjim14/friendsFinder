@@ -1,7 +1,6 @@
 function update(){
     this.update = (info) => {
         friendsList.push(info);
-        console.log(friendsList);
     }
     this.retrieve = () => {
         return friendsList;
@@ -26,6 +25,33 @@ var friendsList = [
             1, 1, 1,
             1, 1, 1, 
             1, 1, 1, 1
+        ]
+    },
+    {
+        name: "mark",
+        photo: "https://www.easy-oil-painting-techniques.org/images/pencilportrait.jpg",
+        score: [
+            2, 2, 2,
+            2, 2, 2, 
+            2, 2, 2, 2
+        ]
+    },
+    {
+        name: "sarah",
+        photo: "http://www.explore-drawing-and-painting.com/images/avoid-mistakes-drawingpeople.jpg",
+        score: [
+            3, 3, 3,
+            3, 3, 3, 
+            3, 3, 3, 3
+        ]
+    },
+    {
+        name: "erin",
+        photo: "https://i.pinimg.com/originals/04/62/1c/04621c06425d2dd7f1f81ba54f342e5d.jpg",
+        score: [
+            4, 4, 4,
+            4, 4, 4, 
+            4, 4, 4, 4
         ]
     },
     {
