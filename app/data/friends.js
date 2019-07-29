@@ -37,8 +37,8 @@ var friendsList = [
         ]
     },
     {
-        name: "sarah",
-        photo: "http://www.explore-drawing-and-painting.com/images/avoid-mistakes-drawingpeople.jpg",
+        name: "erin",
+        photo: "https://i.pinimg.com/originals/04/62/1c/04621c06425d2dd7f1f81ba54f342e5d.jpg",
         score: [
             3, 3, 3,
             3, 3, 3, 
@@ -46,8 +46,8 @@ var friendsList = [
         ]
     },
     {
-        name: "erin",
-        photo: "https://i.pinimg.com/originals/04/62/1c/04621c06425d2dd7f1f81ba54f342e5d.jpg",
+        name: "sarah",
+        photo: "http://www.explore-drawing-and-painting.com/images/avoid-mistakes-drawingpeople.jpg",
         score: [
             4, 4, 4,
             4, 4, 4, 
@@ -63,4 +63,4 @@ var friendsList = [
             5, 5, 5, 5
         ]
     }
-]
+];
