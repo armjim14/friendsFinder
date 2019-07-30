@@ -1,6 +1,6 @@
 var path = require("path");
 
-function getPage(){
+function getPage(){    
     this.home = (res) => {
         return res.sendFile(path.join(__dirname, "../public/index.html"));
     }
