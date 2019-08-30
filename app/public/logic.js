@@ -28,7 +28,7 @@ $("#done").on("click", () => {
     var nine = $("#a9").val();
     var ten = $("#ax").val();
 
-    var reg = /(jpg|png|jpeg|gif|tif)/gi;
+    var reg = /\./gi;
     var run = reg.test(urlx);
 
     if ( !namex || !urlx || one == "0" || two == "0" || three == "0" || four == "0" || five == "0" 
