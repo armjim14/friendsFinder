@@ -7,7 +7,6 @@ var apix = require( path.resolve(__dirname, "./app/routing/api.js") );
 
 var app = express();
 
-
 // port we are going to be using 
 var PORT = process.env.PORT || 3000;
 
@@ -36,8 +35,6 @@ app.get("/jquery.js", (req, res) => {
     res.sendFile(path.join(__dirname, "/app/public/jquery.js"))
 })
 
-
-// what HTML file to render depending on the route
 app.get("/", (req, res) => {
     route.home(res);
 })

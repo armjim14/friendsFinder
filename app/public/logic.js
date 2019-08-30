@@ -59,7 +59,7 @@ $("#done").on("click", () => {
         }
         
         var temp = [];
-        var nums = [{name: "You Have to take the survey first", url: "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX38503500.jpg", amount: 500}];
+        var nums = [{amount: 500}];
         var list = [parseInt(one), parseInt(two), parseInt(three), parseInt(four), parseInt(five), parseInt(six), parseInt(seven), parseInt(eight), parseInt(nine), parseInt(ten)]
         
         $.get("/api/people", (data) => {
@@ -76,16 +76,16 @@ $("#done").on("click", () => {
                     }
                 }
                 
-                for ( let j = 0; j < temp.length; j++ ){
-                    count += temp[j];
-                }
+                count = temp.reduce((a,b) => {return a + b}, 0)
                 
                 if ( count < nums[0].amount ){
                     nums.splice(0, 1);
                     var fin = { name: data[e].name, url: data[e].photo, amount: count }
                     nums.push(fin);
                 }
+
                 temp = [];
+
             }
 
             afterGet(send);
